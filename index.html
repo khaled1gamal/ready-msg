@@ -1,121 +1,134 @@
 <!DOCTYPE html>
 <html lang="en" lang="ar">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>KHALED GAMAL</title>
     <style>
-        * {
-            text-align: center;
-        }
+      * {
+        text-align: center;
+      }
 
-        button{
-            font-size: 20px;
-            color: rgb(49, 9, 9);
-            background-color: rgba(255, 0, 0, 0.13);
-            border: none;
-            border-radius: 20px;
-            height: 35px;
-            width: 80px;
-            cursor: pointer;
-            transition: all 0.3s;
-        }
-        .send-btn{
-            all: unset;
-            justify-content: center;
-            align-items: center;
-            display: inline-flex;
-            font-size: 20px;
-            color: rgb(49, 9, 9);
-            background-color: rgba(255, 0, 0, 0.13);
-            border-radius: 20px;
-            height: 35px;
-            width: 90px;
-            cursor: pointer;
-            transition: all 0.3s;
-        }
+      button {
+        font-size: 20px;
+        color: rgb(49, 9, 9);
+        background-color: rgba(255, 0, 0, 0.13);
+        border: none;
+        border-radius: 20px;
+        height: 35px;
+        width: 80px;
+        cursor: pointer;
+        transition: all 0.3s;
+      }
 
-        button:active {
-            transform: scale(0.8);
-        }
+      .send-btn {
+        all: unset;
+        justify-content: center;
+        align-items: center;
+        display: inline-flex;
+        font-size: 20px;
+        color: rgb(49, 9, 9);
+        background-color: rgba(255, 0, 0, 0.13);
+        border-radius: 20px;
+        height: 35px;
+        width: 90px;
+        cursor: pointer;
+        transition: all 0.3s;
+        display: none;
+      }
 
-        .tel-num {
-            height: 30px;
-        }
+      button:active {
+        transform: scale(0.8);
+      }
+
+      .tel-num {
+        height: 30px;
+      }
     </style>
-</head>
+  </head>
 
-<body>
-    <h1>password</h1><br>
+  <body>
+    <h1>password</h1>
+    <br />
 
-    <h4>Kh@123456 <br> alrayyanoptics2010</h4>
     <h4>
-        عزيزي العميل يرجى العلم ان العدسات جاهزه للاستلام
-        <br>
-        <br>
-        dear customer,
-        your lenses is ready for pick up.
-        <button class="copy-btn">Copy</button>
+      Kh@123456 <br />
+      alrayyanoptics2010
     </h4>
-    <br>
-    <br>
-
-
-    <h4>عزيزي العميل يرجى العلم ان النظاره جاهزه للاستلام
-        <br>
-        <br>
-        dear customer,
-        your glasses is ready for pick up.
-        <button class="copy-btn">Copy</button>
+    <h4>
+      عزيزي العميل يرجى العلم ان العدسات جاهزه للاستلام
+      <br />
+      <br />
+      dear customer, your lenses is ready for pick up.
+      <button class="copy-btn">Copy</button>
     </h4>
-    <div style="align-items: center;">
-        <input class="tel-num" type="text">
-        <a class="send-btn" href="" target="_blank" rel="noopener noreferrer">SEND</a>
+    <br />
+    <br />
+
+    <h4>
+      عزيزي العميل يرجى العلم ان النظاره جاهزه للاستلام
+      <br />
+      <br />
+      dear customer, your glasses is ready for pick up.
+      <button class="copy-btn">Copy</button>
+    </h4>
+    <div style="align-items: center">
+      <input autofocus class="tel-num" type="number" />
+      <a class="send-btn" href="" target="_blank" rel="noopener noreferrer"
+        >SEND</a
+      >
     </div>
-    <br>
-    <br>
+    <br />
+    <br />
 
     <h4>
-        F Saturday T Thursday
-        f 8:30AM to 12:30PM,
-        f 4PM to 10PM . <br>
+      F Saturday T Thursday f 8:30AM to 12:30PM, f 4PM to 10PM . <br />
 
-        من السبت الي الخميس
-        .من 8:30ص الي 12:30ظ , من 4م الي 10م
-        <button class="copy-btn">Copy</button>
+      من السبت الي الخميس .من 8:30ص الي 12:30ظ , من 4م الي 10م
+      <button class="copy-btn">Copy</button>
     </h4>
 
+    الخريطه <br />
 
-    الخريطه <br>
-
-    <h5>https://goo.gl/maps/cYpN58pHvgH48eez7
-        <button class="copy-btn">Copy</button>
+    <h5>
+      https://goo.gl/maps/cYpN58pHvgH48eez7
+      <button class="copy-btn">Copy</button>
     </h5>
 
     <script>
-        let copy = document.querySelectorAll('.copy-btn')
-        copy.forEach(item => {
-            item.addEventListener('click', (eo) => {
-                navigator.clipboard.writeText(item.parentElement.innerText.replace('Copy', ''));
-                item.innerHTML = 'copied'
-                setTimeout(() => {
-                    item.innerHTML = 'Copy'
-                }, 700);
-            })
+      let copy = document.querySelectorAll(".copy-btn");
+      copy.forEach((item) => {
+        item.addEventListener("click", (eo) => {
+          navigator.clipboard.writeText(
+            item.parentElement.innerText.replace("Copy", "")
+          );
+          item.innerHTML = "copied";
+          const thank = new Audio("2.opus");
+          thank.play();
+          setTimeout(() => {
+            item.innerHTML = "Copy";
+          }, 700);
         });
+      });
 
-        let telNum = document.querySelector('.tel-num')
-        let sendBtn = document.querySelector('.send-btn')
-        sendBtn.addEventListener('click', (eo) => {
-            sendBtn.href = `http://wa.me/974${telNum.value}`
-            telNum.value = ''
-        
-        })
-        
+      let telNum = document.querySelector(".tel-num");
+      let sendBtn = document.querySelector(".send-btn");
+      telNum.addEventListener("keyup", (eo) => {
+        if (
+          telNum.value !== "" &&
+          telNum.value.length == 8 &&
+          telNum.value.length < 9
+        ) {
+          sendBtn.style.display = "inline-flex";
+          sendBtn.href = `http://wa.me/974${telNum.value}`;
+          setTimeout(() => {
+            location.reload();
+          }, 4000);
+        } else {
+          sendBtn.style.display = "none";
+        }
+      });
     </script>
-
-</body>
-
+  </body>
 </html>
