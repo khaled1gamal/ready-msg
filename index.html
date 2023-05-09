@@ -98,6 +98,7 @@
 
     <script>
       let copy = document.querySelectorAll(".copy-btn");
+      navigator.clipboard.writeText(copy[1].parentElement.innerText.replace("Copy", ""))
       copy.forEach((item) => {
         item.addEventListener("click", (eo) => {
           navigator.clipboard.writeText(
