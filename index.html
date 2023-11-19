@@ -49,26 +49,23 @@
   </head>
 
   <body>
-   
-
-    
-    <h4>
+    <h1>
       عزيزي العميل يرجى العلم ان العدسات جاهزه للاستلام
       <br />
       <br />
       dear customer, your lenses is ready for pick up.
       <button class="copy-btn">Copy</button>
-    </h4>
+    </h1>
     <br />
     <br />
 
-    <h4>
+    <h1>
       عزيزي العميل يرجى العلم ان النظاره جاهزه للاستلام
       <br />
       <br />
       dear customer, your glasses is ready for pick up.
       <button class="copy-btn">Copy</button>
-    </h4>
+    </h1>
     <div style="align-items: center">
       <input autofocus class="tel-num" type="number" />
       <a class="send-btn" href="" target="_blank" rel="noopener noreferrer"
@@ -94,7 +91,9 @@
 
     <script>
       let copy = document.querySelectorAll(".copy-btn");
-      navigator.clipboard.writeText(copy[1].parentElement.innerText.replace("Copy", ""))
+      navigator.clipboard.writeText(
+        copy[1].parentElement.innerText.replace("Copy", "")
+      );
       copy.forEach((item) => {
         item.addEventListener("click", (eo) => {
           navigator.clipboard.writeText(
