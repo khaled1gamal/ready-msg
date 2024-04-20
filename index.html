@@ -112,14 +112,14 @@
     <script>
       let copy = document.querySelectorAll(".copy-btn");
       navigator.clipboard.writeText(
-        copy[1].parentElement.innerText.replace("Copy", "")
+        copy[2].parentElement.innerText.replace("Copy", "")
       );
       copy.forEach((item) => {
         item.addEventListener("click", (eo) => {
           navigator.clipboard.writeText(
             item.parentElement.innerText.replace("Copy", "")
           );
-          item.innerHTML = "copied";
+          item.innerHTML = "Copied";
           const thank = new Audio("2.opus");
           thank.play();
           setTimeout(() => {
