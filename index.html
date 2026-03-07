@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -25,8 +25,9 @@
         --shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
         --card-radius: 16px;
         --btn-radius: 10px;
-        --font-main: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-          Helvetica, Arial, sans-serif;
+        --font-main:
+          -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+          Arial, sans-serif;
       }
 
       body.dark-mode {
@@ -51,7 +52,9 @@
         font-family: var(--font-main);
         background-color: var(--bg-color);
         color: var(--text-color);
-        transition: background-color 0.3s, color 0.3s;
+        transition:
+          background-color 0.3s,
+          color 0.3s;
         display: flex;
         justify-content: center;
         padding: 20px;
@@ -283,7 +286,9 @@
         border-radius: 25px;
         font-size: 14px;
         box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
-        animation: fadeIn 0.3s, fadeOut 0.3s 2.7s;
+        animation:
+          fadeIn 0.3s,
+          fadeOut 0.3s 2.7s;
         backdrop-filter: blur(5px);
       }
 
@@ -342,16 +347,18 @@
         <!-- Message Cards -->
         <div
           class="card message-card"
-          data-message-ar="عزيزي العميل، يرجى العلم أن عدسات النظارة جاهزة للتركيب."
-          data-message-en="Dear customer, your glasses lenses are ready for installation."
+          data-message-ar="عزيزي العميل، يرجى العلم أن عدسات النظارة جاهزة للتركيب.  يرجي العلم ان تركيب النظاره قد يستغرق من 1 الي 2 ساعه."
+          data-message-en="Dear customer, your glasses lenses are ready for installation.  Please note that the installation process may take 1 to 2 hours."
         >
           <h2>Lenses Ready for Installation</h2>
           <p class="arabic" lang="ar">
             عزيزي العميل، يرجى العلم أن عدسات النظارة جاهزة للتركيب.
+            <br />
             يرجي العلم ان تركيب النظاره قد يستغرق من 1 الي 2 ساعه.
           </p>
           <p lang="en">
             Dear customer, your glasses lenses are ready for installation.
+            <br />
             Please note that the installation process may take 1 to 2 hours.
           </p>
           <div class="button-group">
@@ -404,29 +411,64 @@
         </div>
 
         <!-- Info Cards -->
-        <div class="card" data-copy-text="From Saturday to Thursday. From 8:30 am to 12:30 pm, from 4 pm to 10 pm. من السبت الي الخميس .من ٨:٣٠ ص الي ١٢:٣٠ ظ , من ٤ م الي ١٠ م">
+        <div
+          class="card"
+          data-copy-text="From Saturday to Thursday. From 8:30 am to 12:30 pm, from 4 pm to 10 pm. من السبت الي الخميس .من ٨:٣٠ ص الي ١٢:٣٠ ظ , من ٤ م الي ١٠ م"
+        >
           <h2>Working Hours</h2>
-          <p lang="en">From Saturday to Thursday.<br>8:30 AM - 12:30 PM & 4:00 PM - 10:00 PM</p>
-          <p class="arabic" lang="ar">من السبت الي الخميس<br>من ٨:٣٠ ص الي ١٢:٣٠ ظ ومن ٤:٠٠ م الي ١٠:٠٠ م</p>
-           <div class="button-group">
-            <button class="btn btn-copy" data-action="copy-parent">Copy Hours</button>
-            <button class="btn btn-send hidden" data-action="send-parent">Send</button>
-            <button class="btn btn-send-copy hidden" data-action="send-copy-parent">
+          <p lang="en">
+            From Saturday to Thursday.<br />8:30 AM - 12:30 PM & 4:00 PM - 10:00
+            PM
+          </p>
+          <p class="arabic" lang="ar">
+            من السبت الي الخميس<br />من ٨:٣٠ ص الي ١٢:٣٠ ظ ومن ٤:٠٠ م الي ١٠:٠٠
+            م
+          </p>
+          <div class="button-group">
+            <button class="btn btn-copy" data-action="copy-parent">
+              Copy Hours
+            </button>
+            <button class="btn btn-send hidden" data-action="send-parent">
+              Send
+            </button>
+            <button
+              class="btn btn-send-copy hidden"
+              data-action="send-copy-parent"
+            >
               Send & Copy
             </button>
           </div>
         </div>
 
-        <div class="card" data-copy-text="https://maps.app.goo.gl/rZtSFk5YJAmttwXYA">
+        <div
+          class="card"
+          data-copy-text="https://maps.app.goo.gl/rZtSFk5YJAmttwXYA"
+        >
           <h2>Location</h2>
-          <p style="word-break: break-all; color: var(--primary-color);">https://maps.app.goo.gl/rZtSFk5YJAmttwXYA</p>
-           <div class="button-group">
-            <button class="btn btn-copy" data-action="copy-parent">Copy Link</button>
-            <button class="btn btn-send hidden" data-action="send-parent">Send</button>
-            <button class="btn btn-send-copy hidden" data-action="send-copy-parent">
+          <p style="word-break: break-all; color: var(--primary-color)">
+            https://maps.app.goo.gl/rZtSFk5YJAmttwXYA
+          </p>
+          <div class="button-group">
+            <button class="btn btn-copy" data-action="copy-parent">
+              Copy Link
+            </button>
+            <button class="btn btn-send hidden" data-action="send-parent">
+              Send
+            </button>
+            <button
+              class="btn btn-send-copy hidden"
+              data-action="send-copy-parent"
+            >
               Send & Copy
             </button>
-            <a href="https://maps.app.goo.gl/rZtSFk5YJAmttwXYA" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="background-color: var(--primary-color);">Open Map</a>
+            <a
+              href="https://maps.app.goo.gl/rZtSFk5YJAmttwXYA"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn-primary"
+              style="background-color: var(--primary-color)"
+              >Open Map</a
+            >
           </div>
         </div>
       </main>
@@ -441,12 +483,16 @@
         const phoneInput = document.getElementById("phone-number");
         const appContainer = document.querySelector(".app-container");
         const toastContainer = document.getElementById("toast-container");
-        const sendButtons = document.querySelectorAll(".btn-send, .btn-send-copy");
+        const sendButtons = document.querySelectorAll(
+          ".btn-send, .btn-send-copy",
+        );
 
         // --- Constants & State ---
         const QATAR_COUNTRY_CODE = "974";
         const VALID_PHONE_LENGTH = 8;
-        const copySound = new Audio('data:audio/wav;base64,UklGRl9vT19XQVZFZm10IBAAAAABAAEAQB8AAEAfAAABAAgAZGF0YV');
+        const copySound = new Audio(
+          "data:audio/wav;base64,UklGRl9vT19XQVZFZm10IBAAAAABAAEAQB8AAEAfAAABAAgAZGF0YV",
+        );
 
         // --- Initialization ---
         function init() {
@@ -529,7 +575,11 @@
               copyToClipboard(fullMessage, "Message Copied", "تم نسخ الرسالة");
               break;
             case "copy-parent":
-              copyToClipboard(parentCopyText, "Copied to clipboard", "تم النسخ");
+              copyToClipboard(
+                parentCopyText,
+                "Copied to clipboard",
+                "تم النسخ",
+              );
               break;
             case "send":
               openWhatsApp(fullMessage);
@@ -542,7 +592,11 @@
               openWhatsApp(parentCopyText);
               break;
             case "send-copy-parent":
-              copyToClipboard(parentCopyText, "Copied to clipboard", "تم النسخ");
+              copyToClipboard(
+                parentCopyText,
+                "Copied to clipboard",
+                "تم النسخ",
+              );
               openWhatsApp(parentCopyText);
               break;
           }
@@ -592,4 +646,3 @@
     </script>
   </body>
 </html>
-
