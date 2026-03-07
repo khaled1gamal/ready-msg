@@ -348,9 +348,11 @@
           <h2>Lenses Ready for Installation</h2>
           <p class="arabic" lang="ar">
             عزيزي العميل، يرجى العلم أن عدسات النظارة جاهزة للتركيب.
+            يرجي العلم ان تركيب النظاره قد يستغرق من 1 الي 2 ساعه.
           </p>
           <p lang="en">
             Dear customer, your glasses lenses are ready for installation.
+            Please note that the installation process may take 1 to 2 hours.
           </p>
           <div class="button-group">
             <button class="btn btn-copy" data-action="copy">Copy</button>
@@ -495,7 +497,7 @@
         function validatePhoneNumber() {
           const isValid = phoneInput.value.length === VALID_PHONE_LENGTH;
           if (isValid) {
-            localStorage.setItem("lastPhoneNumber", phoneInput.value);
+            //localStorage.setItem("lastPhoneNumber", phoneInput.value);
           }
           toggleSendButtons(isValid);
           return isValid;
