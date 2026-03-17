@@ -629,6 +629,7 @@
           const url = `https://wa.me/${fullPhoneNumber}?text=${encodedMessage}`;
           window.open(url, "_blank", "noopener,noreferrer");
           phoneInput.value = "";
+          toggleSendButtons(false);
         }
 
         // --- UI Feedback ---
