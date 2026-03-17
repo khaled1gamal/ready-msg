@@ -625,6 +625,7 @@
           const encodedMessage = encodeURIComponent(message);
           const url = `https://wa.me/${fullPhoneNumber}?text=${encodedMessage}`;
           window.open(url, "_blank", "noopener,noreferrer");
+          phoneInput.value = "";
         }
 
         // --- UI Feedback ---
