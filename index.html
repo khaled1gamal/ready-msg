@@ -291,6 +291,11 @@
           fadeOut 0.3s 2.7s;
         backdrop-filter: blur(5px);
       }
+      .app-main {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
 
       @keyframes fadeIn {
         from {
@@ -328,7 +333,7 @@
         </label>
       </header>
 
-      <main>
+      <main class="app-main">
         <!-- Phone Number Input Card -->
         <div class="card" id="phone-card">
           <h2>Customer Phone</h2>
@@ -343,8 +348,47 @@
             />
           </div>
         </div>
-
-        <!-- Message Cards -->
+        <!-- Glasses Ready -->
+        <div
+          class="card message-card"
+          data-message-ar="عزيزي العميل، يرجى العلم أن النظارة جاهزة للاستلام."
+          data-message-en="Dear customer, your glasses are ready for pick up."
+        >
+          <h2>Glasses Ready</h2>
+          <p class="arabic" lang="ar">
+            عزيزي العميل، يرجى العلم أن النظارة جاهزة للاستلام.
+          </p>
+          <p lang="en">Dear customer, your glasses are ready for pick up.</p>
+          <div class="button-group">
+            <button class="btn btn-copy" data-action="copy">Copy</button>
+            <button class="btn btn-send hidden" data-action="send">Send</button>
+            <button class="btn btn-send-copy hidden" data-action="send-copy">
+              Copy & Send
+            </button>
+          </div>
+        </div>
+        <!-- Contact Lenses Ready -->
+        <div
+          class="card message-card"
+          data-message-ar="عزيزي العميل، يرجى العلم أن العدسات اللاصقة جاهزة للاستلام."
+          data-message-en="Dear customer, your contact lenses are ready for pick up."
+        >
+          <h2>Contact Lenses Ready</h2>
+          <p class="arabic" lang="ar">
+            عزيزي العميل، يرجى العلم أن العدسات اللاصقة جاهزة للاستلام.
+          </p>
+          <p lang="en">
+            Dear customer, your contact lenses are ready for pick up.
+          </p>
+          <div class="button-group">
+            <button class="btn btn-copy" data-action="copy">Copy</button>
+            <button class="btn btn-send hidden" data-action="send">Send</button>
+            <button class="btn btn-send-copy hidden" data-action="send-copy">
+              Copy & Send
+            </button>
+          </div>
+        </div>
+        <!-- Lenses Ready for Installation -->
         <div
           class="card message-card"
           data-message-ar="عزيزي العميل، يرجى العلم أن عدسات النظارة جاهزة للتركيب.  يرجي العلم ان تركيب النظاره قد يستغرق من 1 الي 2 ساعه."
@@ -369,48 +413,7 @@
             </button>
           </div>
         </div>
-
-        <div
-          class="card message-card"
-          data-message-ar="عزيزي العميل، يرجى العلم أن العدسات اللاصقة جاهزة للاستلام."
-          data-message-en="Dear customer, your contact lenses are ready for pick up."
-        >
-          <h2>Contact Lenses Ready</h2>
-          <p class="arabic" lang="ar">
-            عزيزي العميل، يرجى العلم أن العدسات اللاصقة جاهزة للاستلام.
-          </p>
-          <p lang="en">
-            Dear customer, your contact lenses are ready for pick up.
-          </p>
-          <div class="button-group">
-            <button class="btn btn-copy" data-action="copy">Copy</button>
-            <button class="btn btn-send hidden" data-action="send">Send</button>
-            <button class="btn btn-send-copy hidden" data-action="send-copy">
-              Copy & Send
-            </button>
-          </div>
-        </div>
-
-        <div
-          class="card message-card"
-          data-message-ar="عزيزي العميل، يرجى العلم أن النظارة جاهزة للاستلام."
-          data-message-en="Dear customer, your glasses are ready for pick up."
-        >
-          <h2>Glasses Ready</h2>
-          <p class="arabic" lang="ar">
-            عزيزي العميل، يرجى العلم أن النظارة جاهزة للاستلام.
-          </p>
-          <p lang="en">Dear customer, your glasses are ready for pick up.</p>
-          <div class="button-group">
-            <button class="btn btn-copy" data-action="copy">Copy</button>
-            <button class="btn btn-send hidden" data-action="send">Send</button>
-            <button class="btn btn-send-copy hidden" data-action="send-copy">
-              Copy & Send
-            </button>
-          </div>
-        </div>
-
-        <!-- Info Cards -->
+        <!-- Working Hours -->
         <div
           class="card"
           data-copy-text="From Saturday to Thursday. From 8:30 am to 12:30 pm, from 4 pm to 10 pm. من السبت الي الخميس .من ٨:٣٠ ص الي ١٢:٣٠ ظ , من ٤ م الي ١٠ م"
@@ -439,7 +442,7 @@
             </button>
           </div>
         </div>
-
+        <!-- Location -->
         <div
           class="card"
           data-copy-text="https://maps.app.goo.gl/rZtSFk5YJAmttwXYA"
